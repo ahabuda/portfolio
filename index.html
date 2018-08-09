@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Aleksander Habuda Portfolio </title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="jquery.min.js"></script>
+    <script>
+        function scroll_to(selector) {
+            $('html,body').animate({
+                scrollTop: $(selector).offset().top
+            }, 700);
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $.localScroll();
+        });
+
+    </script>
+    <div id="menu">
+        <ul>
+            <li><a href='javascript:void();' onclick='scroll_to(&apos;#start&apos;);'>Start</a></li>
+            <li><a href='javascript:void();' onclick='scroll_to(&apos;#omnie&apos;);'>O mnie</a></li>
+            <li><a href='javascript:void();' onclick='scroll_to(&apos;#projekty&apos;);'>Projekty</a></li>
+            <li><a href='javascript:void();' onclick='scroll_to(&apos;#zatrudnij&apos;);'>Zatrudnij mnie</a></li>
+        </ul>
+    </div>
+    <div id="start" class='header'>
+        <div class='text-vertical-center'>
+            <h1>Aleksander Habuda</h1>
+            <div class="motto">"Jeśli sądzisz, że potrafisz to masz rację. Jeśli sądzisz, że nie potrafisz – również masz rację."</div>
+            <div class="ja"><img src="images/ja.jpg" /></div>
+            <a class='btn btn-dark btn-lg' href='javascript:void();' onclick='scroll_to(&apos;#omnie&apos;);'>Poznaj mnie</a>
+        </div>
+    </div>
+    <div id="omnie" class='fullpage'>
+        <div class='text-vertical-center'>
+            <h1>O mnie</h1>
+            <hr/>
+            <p class="pol">Jestem <strong>studentem</strong> drugiego roku <strong>informatyki na Uniwersytecie Rzeszowskim</strong>. Moimi głownymi zainteresowaniami są: webmastering, SEO, forografia oraz wszelkiego rodzaju nowinki technologiczne. Informatyką interesuje się praktycznie od urodzenia i od początku z pasją. Na poważnie webmasteringiem zacząłem się zajmować w 2009 roku, co zaowocowało powstaniem <strong>największego w Polsce serwisu z modyfikacjami do gier - AddonsCity</strong>. W 2015 roku stworzyłem sklep internetowy z pomocami dydaktycznymi - ZPAleko.pl oraz uruchomiłem sprzedaż na Allegro. Przy robieniu zdjęć do sklepu, zaraziłem się także pasją do fotografii, co zostało do dziś. </p>
+            <!-- <br/><br/>
+            <h1>Kontakt</h1>
+            <hr/>
+            <p class="pol"><strong>E-mail:</strong> alekhabuda@gmail.com</p> -->
+        </div>
+    </div>
+    <div id="projekty" class="fullpage">
+        <div class='text-vertical-center'>
+            <h1>Projekty</h1>
+            <hr/>
+            <div class="blok">
+                <h3>AddonsCity</h3>
+                <hr/>
+                <div><a href="http://pl.addonscity.com/" target="_blank"><img src="images/addonscity.png" /></a></div>
+                <p>Największy z moich dotychczasowych projektów na który poświeciłem naprawdę wiele czasu i serca. Pierwsza wersja serwisu powstała w 2009 roku. Niedługo potem, strona stała się największą bazą modyfikacji do gier w Polsce. Serwis przez ponad 6 lat swojego istnienia przeszedł wiele metamorfoz. Największa z nich właśnie trwa, a jej głównym celem jest wejście na rynek zagraniczny.<br/><br/>
+                    <strong>Adres:</strong> <a href="http://pl.addonscity.com/" target="_blank">AddonsCity.com</a>
+                </p>
+            </div>
+            <div class="blok">
+                <h3>ZP Aleko</h3>
+                <hr/>
+                <div><a href="http://zpaleko.pl/" target="_blank"><img src="images/aleko.jpg" /></a></div>
+                <p>Sklep internetowy (rodzinnego biznesu) z pomocami dydaktycznymi i zabawkami - drugie pod względem włożonej pracy przedsięwzięcie. Pierwsza wersja strony (jeszcze nie sklepu) powstała w okolicach 2009 roku. Strona wiele razy przebudowywana, by w 2015 roku zamienić się w pełnoprawny sklep na bazie Wordpressa oraz wtyczki WooCommerce. Wykonywanie zdjęć produktowych przy tworzeniu sklepu zaszczepiło we mnie kolejną pasje - fotografie. <br/><br/>
+                    <strong>Adres:</strong> <a href="http://zpaleko.pl/" target="_blank">ZPAleko.pl</a></p>
+            </div>
+            <div class="blok">
+                <h3>Fotografia/Grafika</h3>
+                <hr/>
+                <div><img src="images/fotografia.jpg" /></div>
+                <p>Projekt-spoiwo można by rzecz. Grafika i fotografia to elementy łączące wszystkie moje dotychczasowe projekty, ale nie tylko. Są także odrębnymi projektami jak grafiki na koszulkę czy avatary.
+                </p>
+            </div>
+            <div class="button"><a class='btn btn-dark btn-lg' href='javascript:void();' onclick='scroll_to(&apos;#start&apos;);'>Start</a></div>
+        </div>
+    </div>
+
+    <div id="footer">Copyright 2016 - Aleksander Habuda</div>
+</body>
+
+</html>
